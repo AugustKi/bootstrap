@@ -1,0 +1,149 @@
+
+.navbar{
+    background-color: grey;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+.navbar-brand img{
+    width: 50%;
+}
+.login-button{
+    font-family: "Noto Serif", serif;
+    background-color: #fff;
+    color: dimgrey;
+    font-size: 1vw;
+    padding: 0.5em 1em;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.login-button:hover {
+    background-color: rgb(224, 211, 197);
+}
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler-icon{
+    width: 10;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link{
+    font-family: "Noto Serif", serif;
+    color: #dbdbdb;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover, .nav-link.active{
+    color: #fff;
+}
+
+@media (min-width:965px){
+    .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+}
+}
+
+.hero-section{
+    background: url(image/bgc.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+.hero-section:before{
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.hero-section .container{
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+.hero-section h1{
+    font-size: 1.5em;
+    width: 100vw;
+    text-align: center;
+    font-family: "Noto Serif", serif;
+}
+
+.carousel{
+    width: 50vh;
+    padding: 8px;
+    margin: auto;
+}
+
+.tab-content{
+    font-family: "Noto Serif", serif;
+}
+
+.accordion{
+    width: 60%;
+    background: transparent;
+    padding: 3%;
+}
+.accordion-item{
+    background-color: rgb(224, 212, 197);
+    border: none;
+    
+}
+.accordion-body{
+    font-size: 0.7em;
+    font-family: "Noto Serif", serif;
+}
+.accordion-button{
+    font-family: "Noto Serif", serif;
+    font-size: 0.8em;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+}
+.accordion-button:focus{
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.accordion-button:not(.collapsed){
+    background: rgba(0, 0, 0, 0.1);
+    color: black;
+    box-shadow: none;
+}
+.accordion-button::after{
+    background-image: none;
+}
+
+.gridi{
+    width: 20vw;
+    object-fit: cover;
+    margin-left: 36%;
+}
+.row{
+    padding: 2%;
+}
+@media(max-width: 375px){
+    .gridi{
+        width: 40vw;
+        margin-left: 25%;
+    }
+}
